@@ -1,16 +1,22 @@
 type GreetProps = {
     name: string
-    messageCount:number
+    messageCount: number
+    isLoggedIn: boolean
 }
 
 export const Greet = (props: GreetProps) => {
+    
     return (
 
         <div>
 
-            <h1>
-                Welcome Hardik {props.name} send your Child  { props.messageCount}Predictor 
-            </h1>
+            <h2>
+                {
+                    props.isLoggedIn ? `  Welcome Hardik ${props.name} send your Child  ${props.messageCount}Predictor ` : 'welcome Preditor' 
+            
+                }
+            
+            </h2>
         </div>
     )
 }
