@@ -1,4 +1,4 @@
-type personProps = {
+type PersonProps = {
     name: {
         first: string
         last:string
@@ -6,10 +6,10 @@ type personProps = {
 
 }
 
-export const Person = (props:personProps) => {
+export const Person = (props:PersonProps) => {
 
     return (
     
-        <div> {props.name.first} {props.name.last} </div>
+        <div> {props.name.first} {props.name.first} </div>
     )
 }

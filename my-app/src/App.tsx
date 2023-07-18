@@ -1,35 +1,30 @@
 import './App.css';
-import { Greet } from './components/Greet';
-import { Person } from './components/person';
-import { PersonList } from './components/PersonList';
+// import { Heading } from './components/Heading'
+// import {Status } from './components/Status'
+// import { Oscar } from './components/Oscar'
+// import {Greet} from './components/Greet'
+import {Button} from './components/Button'
 function App() {
-  const personName = {
-    first: 'Yog',
-    last: 'Akash'
-  };
-
-  const nameList = [
-    {
-    
-    first: 'Brulie',
-    last: 'chose'
-
-
-
-    },
-    {
-      first: 'Choslie',
-      last: 'moslie'
-    }
-  ]
- 
   return (
-    <div className="App">
-      <Greet name='Jiya Band' messageCount={20} isLoggedIn={true} />
-      <Person name= {personName} />
-      <PersonList name= {nameList} />
+    <div className='App'>
+      {/* <Status status='error' /> 
+      <Heading > Text</Heading >
+    
+      <Oscar> */}
+
+        {/* <Heading> Oscar</Heading> */}
+      {/* </Oscar >
+      <Greet name='Hardik' messageCount={ 10} isLoggedIn={false} /> */}
+      <Button handleClick={(event) =>{
+
+        console.log('Button Clicked', event)
+      } }
+      
+      />
+
     </div>
-  );
+
+  )
 }
 
 export default App;
